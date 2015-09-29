@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+// Block as a Property
+@property (nonatomic,copy)void (^completionBlock)(NSArray *array, NSError *error);
+//@property (nonatomic, copy) returnType (^blockName)(parameters);
+
 
 @end
 
